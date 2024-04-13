@@ -11,7 +11,7 @@ function like(e) {
     .then(() =>{
       if ( heart.innerText === EMPTY_HEART) {
         heart.innerText = FULL_HEART;
-        heart.className = "liked";
+        heart.className = "activated-heart";
       } else {
         heart.innerText = EMPTY_HEART;
         heart.className = "";
@@ -21,7 +21,7 @@ function like(e) {
       const modal = document.getElementById("modal");
       modal.className = "";
       modal.innerText = error;
-      setTimeout(() =>  modal.className = "hidden", 2000);
+      setTimeout(() =>  modal.className = "hidden", 3000);
     });
 }
 
